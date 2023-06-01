@@ -24,4 +24,5 @@ export const ScreenName = {
   Profile: 'Profile',
   ProfileChange: 'ProfileChange',
   ProfilePic: 'ProfilePic',
+  WHERE_TO: 'WhereTo',
 };

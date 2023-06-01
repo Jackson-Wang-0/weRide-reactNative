@@ -1,7 +1,6 @@
 import React from 'react';
 import {Text, View, Image, SafeAreaView, TextInput} from 'react-native';
 import styles from './style';
-import LongBottom from '../../../components/LongButton';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 const locURL = require('../../../assets/images/search/loc.png');
 const graylocURL = require('../../../assets/images/search/grayloc.png');

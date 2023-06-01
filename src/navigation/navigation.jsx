@@ -31,6 +31,7 @@ import ProfileChange from '../screens/Main/ProfileChange/index';
 import ProfilePic from '../screens/Main/ProfilePic/index';
 import RiderTabNavigator from './RiderTabNavigator';
 import {ScreenName} from '../constants/ScreenName';
+import WhereTo from '../screens/Auth/WhereTo/index';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -99,6 +100,7 @@ const Navigation = () => {
           />
           <Stack.Screen name={ScreenName.BOOK_TIME} component={BookTime} />
           <Stack.Screen name={ScreenName.MAIN} component={RiderTabNavigator} />
+          <Stack.Screen name="WhereTo" component={WhereTo} />
         </Stack.Navigator>
       </NavigationContainer>
     </AuthContext.Provider>

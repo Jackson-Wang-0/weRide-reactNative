@@ -17,7 +17,12 @@ const TimeSelection = () => {
     { label: "PM", value: "2" },
   ];
   
-  var hours = new Date().getHours() - 12; //Current Hours
+  
+  var hours = new Date().getHours(); //Current Hours
+  if (hours > 12) {
+    hours = hours - 12
+  }
+  console.log(hours)
   var min = new Date().getMinutes(); //Current Minutes
   
     
@@ -50,14 +55,14 @@ const TimeSelection = () => {
             <View style={{flexDirection:"row", marginTop: 10}}>
 
                 <View style={{flex:1}}>
-                    <Text style={{fontSize: 20, fontWeight:500}}>Time</Text>
+                    <Text style={{fontSize: 20, fontWeight:"500"}}>Time</Text>
                 </View>
 
                 <ImageBackground 
                 source={gray_rec} 
                 style={{flex: 1, left: width * 0.1, height: 30, width: 60}}
                 imageStyle={{ borderRadius: 6}}>
-                    <Text style={{fontSize: 21, fontWeight:500, left: 7}}>
+                    <Text style={{fontSize: 21, fontWeight:"500", left: 7}}>
                         {min < 10 ? [hours, ":", 0, min] : [hours, ":", min]}
                     </Text>
                 </ImageBackground>

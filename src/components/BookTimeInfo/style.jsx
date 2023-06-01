@@ -11,13 +11,13 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginLeft: 10, 
         fontSize: 17, 
-        fontWeight:700
+        fontWeight:"700"
     },
     time: {
         marginTop: 12,
         marginLeft: 10, 
         fontSize: 15, 
-        fontWeight:700,
+        fontWeight:"700",
         color: 'gray'
     },
     cost: {
