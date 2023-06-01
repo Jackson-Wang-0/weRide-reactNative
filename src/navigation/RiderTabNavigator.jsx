@@ -3,6 +3,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Colors} from '../constants/colors';
 import Home from '../screens/Main/Home';
 import Login from '../screens/Auth/Login';
+import Profile from '../screens/Main/Profile';
+import ProfileChange from '../screens/Main/ProfileChange';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Activity from '../screens/Main/Activity';
@@ -18,6 +20,14 @@ const ActivityNavigator = () => {
       <Stack.Screen name="ActivityList" component={Activity} />
       <Stack.Screen name="TripDetails" component={TripDetails} />
       <Stack.Screen name="Home" component={Home} />
+    </Stack.Navigator>
+  );
+};
+const ProfileNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Profiles" component={Profile} />
+      <Stack.Screen name="ProfileChange" component={ProfileChange} />
     </Stack.Navigator>
   );
 };
@@ -45,7 +55,7 @@ const RiderTabNavigator = () => {
       })}>
       <Tab.Screen name={ScreenName.HOME} component={Home} />
       <Tab.Screen name={ScreenName.ACTIVITY} component={ActivityNavigator} />
-      <Tab.Screen name={ScreenName.Profile} component={Login} />
+      <Tab.Screen name={ScreenName.Profile} component={ProfileNavigator} />
     </Tab.Navigator>
   );
 };

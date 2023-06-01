@@ -22,4 +22,6 @@ export const ScreenName = {
   TRIP_DETAILS: 'TripDetails',
   ACTIVITY: 'Activity',
   Profile: 'Profile',
+  ProfileChange: 'ProfileChange',
+  ProfilePic: 'ProfilePic',
 };

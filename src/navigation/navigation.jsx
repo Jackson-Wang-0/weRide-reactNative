@@ -26,6 +26,9 @@ import Home from '../screens/Main/Home';
 import TimeSelection from '../screens/Auth/TimeSelection/index';
 import BookTime from '../screens/Auth/BookTime/index';
 import Pending from '../screens/Main/Pending/index';
+import Profile from '../screens/Main/Profile/index';
+import ProfileChange from '../screens/Main/ProfileChange/index';
+import ProfilePic from '../screens/Main/ProfilePic/index';
 import RiderTabNavigator from './RiderTabNavigator';
 import {ScreenName} from '../constants/ScreenName';
 
@@ -74,6 +77,9 @@ const Navigation = () => {
           />
           <Stack.Screen name={ScreenName.PENDING} component={Pending} />
           <Stack.Screen name={ScreenName.HOME} component={Home} />
+          <Stack.Screen name={ScreenName.Profile} component={Profile} />
+          <Stack.Screen name={ScreenName.ProfileChange} component={ProfileChange} />
+          <Stack.Screen name={ScreenName.ProfilePic} component={ProfilePic} />
           <Stack.Screen
             name={ScreenName.LOCATION_AND_NOTIFICATION1}
             component={LocationAndNotification}
